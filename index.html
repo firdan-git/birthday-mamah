@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun ke-58, Mamah</title>
+  <meta name="description" content="Hadiah digital untuk ulang tahun ke-58 Mamah — album kenangan, surat cinta, dan buku tamu digital." />
+  <meta name="theme-color" content="#06030f" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ec4899' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Latar dekoratif (orbs gradient + partikel lembut) -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-purple"></span>
+    <span class="orb orb-pink"></span>
+    <span class="orb orb-navy"></span>
+  </div>
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container" aria-label="Navigasi utama">
+      <a href="index.html" class="brand">Untuk <span>Mamah</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Beranda</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang Mamah</a></li>
+        <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+        <li><a href="buku-tamu.html" class="nav-link">Buku Tamu</a></li>
+        <li><a href="doa.html" class="nav-link">Doa</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-inner container" aria-label="Navigasi mobile">
+      <a href="index.html" class="mobile-link active">Beranda</a>
+      <a href="tentang.html" class="mobile-link">Tentang Mamah</a>
+      <a href="galeri.html" class="mobile-link">Galeri</a>
+      <a href="buku-tamu.html" class="mobile-link">Buku Tamu</a>
+      <a href="doa.html" class="mobile-link">Doa</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="beranda" class="hero">
+      <span class="hero-number" aria-hidden="true">58</span>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="hero-eyebrow"><span class="line"></span><span data-config="tanggalUlangTahun">28 Agustus 2026</span><span class="line"></span></p>
+          <h1 class="hero-title">
+            Selamat Ulang Tahun <span class="grad-text">ke-<span data-config="usia">58</span></span>,
+            <span class="script-name" data-config="namaMamah">Mamah</span>
+          </h1>
+          <p class="hero-subtitle">&ldquo;Untuk perempuan hebat yang selalu menjadi rumah bagi keluarga.&rdquo;</p>
+          <p class="hero-paragraph">
+            Di hari istimewa ini, ada begitu banyak hal yang ingin disampaikan. Terima kasih untuk setiap
+            kasih sayang, doa, kesabaran, dan pengorbanan yang telah Mamah berikan. Hari ini dunia merayakan
+            hari ketika perempuan terhebat kami dilahirkan.
+          </p>
+          <div class="hero-actions">
+            <a href="galeri.html" class="btn btn-primary">
+              Buka Kenangan
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo reveal" style="--d:.15s">
+          <div class="photo-frame float">
+            <img id="heroPhoto" src="assets/images/mamah_1.jpg" alt="Foto Mamah" />
+          </div>
+        </div>
+      </div>
+      <a href="#surat" class="scroll-hint" aria-label="Gulir ke bawah"><span></span></a>
+    </section>
+
+
+
+    <!-- ================= SURAT DARI ANAK ================= -->
+    <section id="surat" class="section letter-section">
+      <div class="container">
+        <div class="letter-card glass reveal">
+          <div class="letter-head">
+            <p class="section-eyebrow">Surat dari anak</p>
+            <h2 class="section-title script-title">Untuk Mamah</h2>
+            <span class="letter-line" aria-hidden="true"></span>
+          </div>
+          <div class="letter-body" id="letterBody">
+            <p>Selamat ulang tahun ke-58, Mamah.</p>
+            <p>Terima kasih karena selalu menjadi tempat ternyaman untuk pulang, tempat untuk bercerita, dan seseorang yang tidak pernah lelah mendoakan keluarga.</p>
+            <p>Terima kasih untuk semua perjuangan, kesabaran, dan kasih sayang yang mungkin tidak selalu bisa kami balas dengan kata-kata.</p>
+            <p>Semoga di usia 58 tahun ini Mamah selalu diberikan kesehatan, umur panjang, ketenangan, kebahagiaan, dan hari-hari yang dipenuhi hal-hal baik.</p>
+            <p>Semoga Mamah selalu tersenyum dan selalu dikelilingi orang-orang yang menyayangi Mamah.</p>
+            <p>Terima kasih untuk semuanya.</p>
+          </div>
+          <p class="letter-sign">
+            Dengan penuh cinta,
+            <span class="script-name">Anak-anakmu</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ================= UCAPAN TERBARU DI BERANDA ================= -->
+    <section id="ucapan-beranda" class="section home-messages">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Dari hati mereka</p>
+          <h2 class="section-title">Ucapan <span class="grad-text">Terbaru</span></h2>
+          <p class="section-desc">Ucapan dan doa yang masuk dari buku tamu akan muncul di sini secara otomatis.</p>
+        </div>
+
+        <div class="home-messages-grid" id="homeMessageList" aria-live="polite"></div>
+        <div class="home-messages-empty" id="homeMessagesEmpty" hidden>
+          <p>Belum ada ucapan. Jadilah yang pertama mengirim doa dan ucapan untuk Mamah.</p>
+        </div>
+
+        <div class="home-messages-cta reveal">
+          <a href="buku-tamu.html" class="btn btn-primary">Kirim Ucapan untuk Mamah
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-heart" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </span>
+      <p class="footer-script">Dibuat dengan penuh cinta untuk <span data-config="namaMamah">Mamah</span></p>
+      <p class="footer-sub">Selamat ulang tahun ke-<span data-config="usia">58</span> &middot; <span data-config="tanggalUlangTahun">28 Agustus 2026</span></p>
+    </div>
+  </footer>
+
+
+
+  <!-- ================= MUSIK LATAR ================= -->
+  <audio id="bgMusic" src="assets/music/POTRET - Bunda.mp3" loop preload="none"></audio>
+  <button class="music-fab" id="musicBtn" aria-label="Putar atau jeda musik latar">
+    <span class="music-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+    </span>
+    <span class="music-icon hidden" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+    </span>
+    <span class="music-label">Musik</span>
+    <input type="range" class="music-volume" id="musicVolume" min="0" max="100" value="70" aria-label="Volume musik" />
+  </button>
+
+  <!-- Notifikasi toast -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Supabase JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
