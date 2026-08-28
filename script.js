@@ -199,13 +199,12 @@ function buildLightboxSlides() {
 }
 
 function updateSlideUI() {
-  const track = $("#lbTrack");
-  if (track) track.style.transform = `translateX(-${currentIndex * 100}%)`;
   const item = galeriItems[currentIndex];
   const cap = $("#lightboxCaption");
   if (cap && item) cap.textContent = item.caption;
   const count = $("#lightboxCount");
   if (count) count.textContent = `${currentIndex + 1} / ${galeriItems.length}`;
+  $$("#lbTrack .lb-slide").forEach((s, i) => s.classList.toggle("active", i === currentIndex));
   $$("#lbDots .lb-dot").forEach((d, i) => d.classList.toggle("active", i === currentIndex));
 }
 
