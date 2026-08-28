@@ -11,8 +11,8 @@
    Cara mendapatkan URL & anon key: lihat README.md
    Catatan: gunakan ANON/PUBLIC key, BUKAN service role key.
    ============================================================ */
-const SUPABASE_URL = "YOUR_SUPABASE_URL";           // contoh: "https://abcdxyz.supabase.co"
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY"; // contoh: "eyJhbGciOiJIUzI1NiIs..."
+const SUPABASE_URL = "https://yshpcwpwfdfkyocfsums.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlzaHBjd3B3ZmRma3lvY2ZzdW1zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc5MTc2MDcsImV4cCI6MjEwMzQ5MzYwN30.WGZKOMKWxvXyXUx2QsM8DZbjWmZiSZAS6mXJOQun8u0";
 
 /* ============================================================
    2) KONFIGURASI WEBSITE — ubah sesuai kebutuhan
