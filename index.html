@@ -24,14 +24,18 @@
 
   <!-- ================= NAVBAR ================= -->
   <header class="navbar" id="navbar">
-    <nav class="nav-inner container" aria-label="Navigasi utama">
+    
+        <a href="index.html" class="nav-home" aria-label="Kembali ke beranda" title="Beranda">
+          <span class="nav-home-text">Beranda</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+        </a>
+<nav class="nav-inner container" aria-label="Navigasi utama">
       <a href="index.html" class="brand">Untuk <span>Mamah</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="nav-link active">Beranda</a></li>
         <li><a href="tentang.html" class="nav-link">Tentang Mamah</a></li>
         <li><a href="galeri.html" class="nav-link">Galeri</a></li>
         <li><a href="buku-tamu.html" class="nav-link">Ucapan</a></li>
-        <li><a href="doa.html" class="nav-link">Doa</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
@@ -46,7 +50,6 @@
       <a href="tentang.html" class="mobile-link">Tentang Mamah</a>
       <a href="galeri.html" class="mobile-link">Galeri</a>
       <a href="buku-tamu.html" class="mobile-link">Ucapan</a>
-      <a href="doa.html" class="mobile-link">Doa</a>
     </nav>
   </div>
 
@@ -90,21 +93,18 @@
       <div class="container">
         <div class="letter-card glass reveal">
           <div class="letter-head">
-            <p class="section-eyebrow">Surat dari anak</p>
+            <p class="section-eyebrow">Surat Dari Jidan</p>
             <h2 class="section-title script-title">Untuk Mamah</h2>
             <span class="letter-line" aria-hidden="true"></span>
           </div>
           <div class="letter-body" id="letterBody">
             <p>Selamat ulang tahun ke-58, Mamah.</p>
-            <p>Terima kasih karena selalu menjadi tempat ternyaman untuk pulang, tempat untuk bercerita, dan seseorang yang tidak pernah lelah mendoakan keluarga.</p>
+            <p>Terima kasih karena selalu menjadi tempat ternyaman untuk pulang, tempat untuk bercerita, dan seseorang yang tidak pernah lelah untuk mendoakan keluarga.</p>
             <p>Terima kasih untuk semua perjuangan, kesabaran, dan kasih sayang yang mungkin tidak selalu bisa kami balas dengan kata-kata.</p>
-            <p>Semoga di usia 58 tahun ini Mamah selalu diberikan kesehatan, umur panjang, ketenangan, kebahagiaan, dan hari-hari yang dipenuhi hal-hal baik.</p>
+            <p>Semoga di usia ke-58 tahun ini Mamah selalu diberikan kesehatan, umur panjang, ketenangan, kebahagiaan, Rezeki yang lancar dan hari-hari yang dipenuhi hal-hal baik.</p>
             <p>Semoga Mamah selalu tersenyum dan selalu dikelilingi orang-orang yang menyayangi Mamah.</p>
             <p>Terima kasih untuk semuanya.</p>
           </div>
-          <p class="letter-sign">
-            Dengan penuh cinta,
-            <span class="script-name">Anak-anakmu</span>
           </p>
         </div>
       </div>
@@ -120,11 +120,11 @@
 
         <div class="home-messages-grid" id="homeMessageList" aria-live="polite"></div>
         <div class="home-messages-empty" id="homeMessagesEmpty" hidden>
-          <p>Belum ada ucapan. Jadilah yang pertama mengirim doa dan ucapan untuk Mamah.</p>
+          <p>Belum ada ucapan. Jadilah yang pertama mengirim doa dan ucapan.</p>
         </div>
 
         <div class="home-messages-cta reveal">
-          <a href="buku-tamu.html" class="btn btn-primary">Kirim Ucapan untuk Mamah
+          <a href="buku-tamu.html" class="btn btn-primary">Kirim Ucapan
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
@@ -142,11 +142,7 @@
   <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <div class="container footer-inner">
-      <span class="footer-heart" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-      </span>
-      <p class="footer-script">Dibuat dengan penuh cinta untuk <span data-config="namaMamah">Mamah</span></p>
-      <p class="footer-sub">Selamat ulang tahun ke-<span data-config="usia">58</span> &middot; <span data-config="tanggalUlangTahun">28 Agustus 2026</span></p>
+      <p class="footer-sub">Selamat ulang tahun ke-<span data-config="usia">58</span> <span data-config="tanggalUlangTahun">28 Agustus 2026</span></p>
     </div>
   </footer>
 

@@ -47,22 +47,24 @@ const CONFIG = {
 
   // Galeri kenangan — tambah/hapus/ganti sesuai foto di assets/images/
   galeri: [
-    { src: "assets/images/mamah_1.jpg", caption: "Senyum yang tak pernah lekang oleh waktu" },
-    { src: "assets/images/mamah_2.jpg", caption: "Kehangatan pelukan Mamah" },
-    { src: "assets/images/mamah_3.jpg", caption: "Momen kebersamaan keluarga" },
-    { src: "assets/images/mamah_4.jpg", caption: "Tawa yang menghangatkan hati" },
-    { src: "assets/images/mamah_5.jpg", caption: "Perjalanan dan cerita di setiap langkah" },
-    { src: "assets/images/mamah_6.jpg", caption: "Hari-hari sederhana yang berharga" },
-    { src: "assets/images/mamah_7.jpg", caption: "Kasih sayang yang tumbuh setiap hari" },
-    { src: "assets/images/mamah_8.jpg", caption: "Bahagia bersama orang-orang tercinta" },
-    { src: "assets/images/mamah_9.jpg", caption: "Kenangan yang tersimpan dalam hati" },
-    { src: "assets/images/mamah_10.jpg", caption: "Waktu bersama yang tak ternilai" },
-    { src: "assets/images/mamah_11.jpg", caption: "Cinta yang tumbuh sepanjang waktu" },
-    { src: "assets/images/mamah_12.jpg", caption: "Hangatnya kebersamaan di setiap musim" },
-    { src: "assets/images/mamah_13.jpg", caption: "Doa yang selalu Mamah panjatkan" },
-    { src: "assets/images/mamah_14.jpg", caption: "Senyum Mamah, rumah bagi kami semua" },
-    { src: "assets/images/mamah_15.jpg", caption: "Setiap detik bersama Mamah berharga" },
-    { src: "assets/images/mamah_16.jpg", caption: "Selamanya kenangan indah bersama Mamah" }
+    { src: "assets/images/mamah_1.jpg", caption: "Kenangan foto bersama Saat jidan pondok" },
+    { src: "assets/images/mamah_2.jpg", caption: "Kenangan saat liburan keluarga" },
+    { src: "assets/images/mamah_3.jpg", caption: "Momen foto bersama papah di tanah suci" },
+    { src: "assets/images/mamah_4.jpg", caption: "Senyum bahagia saat berangkat ke tanah suci" },
+    { src: "assets/images/mamah_5.jpg", caption: "Foto dengan cucu pertama mamah" },
+    { src: "assets/images/mamah_6.jpg", caption: "Foto bersama saat pelantikan koko" },
+    { src: "assets/images/mamah_7.jpg", caption: "Makan bersama dengan kaka-kaka mamah" },
+    { src: "assets/images/mamah_8.jpg", caption: "Foto bersama saat wisuda Atuindah" },
+    { src: "assets/images/mamah_9.jpg", caption: "Foto saat liburan dibandung" },
+    { src: "assets/images/mamah_10.jpg", caption: "Foto bersama saat lebaran" },
+    { src: "assets/images/mamah_11.jpg", caption: "Foto bersama saat Lebaran" },
+    { src: "assets/images/mamah_12.jpg", caption: "Foto bersama di pondok nelayan lempasing" },
+    { src: "assets/images/mamah_13.jpg", caption: "Foto bersama saat lebaran" },
+    { src: "assets/images/mamah_14.jpg", caption: "Momen Liburan bersama di Grand Elty" },
+    { src: "assets/images/mamah_15.jpg", caption: "Foto Bersama di Grand Elty" },
+    { src: "assets/images/mamah_16.jpg", caption: "Foto bersama sebelum keberangkatan mamah ke tanah suci" },
+    { src: "assets/images/mamah_17.jpg", caption: "Foto bersama saat jidan masih kecil" },
+    { src: "assets/images/mamah_18.jpg", caption: "Foto bersama saat jidan masih kecil" }
   ],
 
   // Buku tamu
@@ -398,7 +400,7 @@ function initMusic() {
     }
   });
 
-  audio.addEventListener("play", () => { setIcon(); if (label()) label().textContent = "Musik"; toast("Musik diputar. Semoga Mamah menyukainya.", "success", 2500); });
+  audio.addEventListener("play", () => { setIcon(); if (label()) label().textContent = "Musik"; toast("Musik diputar.", "success", 2500); });
   audio.addEventListener("pause", () => { setIcon(); if (label()) label().textContent = "Musik"; });
   audio.addEventListener("error", () => toast("File musik tidak ditemukan: " + (CONFIG.musicFile || "-"), "error"));
   setIcon();
@@ -498,7 +500,7 @@ function renderMessages() {
   const wrap = $("#messageList");
   if (wrap) {
     if (messagesCache.length === 0) {
-      wrap.innerHTML = `<div class="messages-empty glass"><p>Belum ada ucapan. Jadilah yang pertama mengirim doa dan ucapan untuk Mamah.</p></div>`;
+      wrap.innerHTML = `<div class="messages-empty glass"><p>Belum ada ucapan. Jadilah yang pertama mengirim doa dan ucapan.</p></div>`;
     } else {
       wrap.innerHTML = messagesCache.map((m) => messageCard(m, true)).join("");
     }
